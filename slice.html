@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slice</title>
+	<script> 
+		var str=this;
+		var newString="";
+		String.prototype.sliceIt=function(num1,num2)
+		{
+			for(var i=num1;i<=num2;i++)
+			{
+				newString+=str[i];
+			}
+			return newString;
+		};
+		var a="Hello world!";
+		console.log(a.sliceIt(0,5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

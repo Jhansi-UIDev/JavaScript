@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script >
+	var n, d;
+	function isPrime(n, m)
+		{
+		    if(n<2)
+		        return "Neither prime nor composite"
+
+		    if(m == 1)
+		        return true;
+		    else 
+		    {
+		        if(n % m == 0) 
+		            return false;
+		        else
+		            return isPrime(n, m - 1);
+		    }
+		}
+		isPrime(7,6);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+</html>

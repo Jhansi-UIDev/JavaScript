@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toUpperCase</title>
+	<script> 
+ 		var a="Hello World!";
+ 	
+ 		String.prototype.toCapitalLetters=function()
+ 		{
+ 			var newStr=[];
+ 			for(var i=0;i<a.length;i++)
+ 			{
+ 				var code=a.charCodeAt(i);
+ 				if(code>96 && code<123)
+ 				{
+ 					code-= 32;
+ 					 newStr.push(String.fromCharCode(code));
+ 				}
+ 				else
+ 				{
+ 					newStr.push(a[i]);
+ 				}	
+             
+ 			}
+ 			return newStr.join("");
+ 		}
+    console.log(a.toCapitalLetters());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

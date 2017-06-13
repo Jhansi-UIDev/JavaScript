@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        MergeSort
+    </title>
+    <script>    
+ 
+
+var a = [34, 203, 3, 746, 200, 984, 198, 764, 9];
+ function bubbleSort(a)
+ {
+    for(var j=0; j<a.length; j++)
+     {
+        for (var i=0; i< a.length; i++) 
+        {
+            if(a[i]>a[i+1])
+            {
+                var temp=a[i];
+                a[i]=a[i+1];
+                a[i+1]=temp;
+            }
+            console.log(a);
+        }
+     }
+}
+bubbleSort(a);
+ </script>
+ 
+</head>
+<body>
+
+</body>
+</html>
